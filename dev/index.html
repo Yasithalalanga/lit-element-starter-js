@@ -6,7 +6,11 @@
     <title>&lt;my-element> Demo</title>
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../my-element.js"></script>
+
+    <script type="module" src="./js/card-element.js"></script>
+    <script type="module" src="./js/full-component.js"></script>
+    <script type="module" src="./js/simple-greeting.js"></script>
+
     <style>
       p {
         border: solid 1px blue;
@@ -15,8 +19,13 @@
     </style>
   </head>
   <body>
-    <my-element>
+    <!-- <my-element>
       <p>This is child content</p>
-    </my-element>
+    </my-element> -->
+
+    <!-- <simple-greeting name="Yasitha Gamage"></simple-greeting> -->
+    <full-component></full-component>
+    <!-- <profile-card title="Card Title"></profile-card> -->
+
   </body>
 </html>

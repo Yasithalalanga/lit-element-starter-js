@@ -6,6 +6,7 @@
 
 import {legacyPlugin} from '@web/dev-server-legacy';
 
+// eslint-disable-next-line no-undef
 const mode = process.env.MODE || 'dev';
 if (!['dev', 'prod'].includes(mode)) {
   throw new Error(`MODE must be "dev" or "prod", was "${mode}"`);
@@ -14,7 +15,7 @@ if (!['dev', 'prod'].includes(mode)) {
 export default {
   nodeResolve: {exportConditions: mode === 'dev' ? ['development'] : []},
   preserveSymlinks: true,
-  rootDir: 'docs',
+  rootDir: '',
   plugins: [
     legacyPlugin({
       polyfills: {
