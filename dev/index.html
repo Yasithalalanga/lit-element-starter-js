@@ -10,22 +10,44 @@
     <script type="module" src="./js/card-element.js"></script>
     <script type="module" src="./js/full-component.js"></script>
     <script type="module" src="./js/simple-greeting.js"></script>
+    <script type="module" src="./js/name-tag.js"></script>
+    <script type="module" src="./js/test-css.js"></script>
 
     <style>
       p {
-        border: solid 1px blue;
-        padding: 8px;
+        color: #000;
+        font-weight: 600;
+        font-size: 1.3rem;
       }
     </style>
   </head>
   <body>
-    <!-- <my-element>
-      <p>This is child content</p>
-    </my-element> -->
 
-    <!-- <simple-greeting name="Yasitha Gamage"></simple-greeting> -->
-    <full-component></full-component>
-    <!-- <profile-card title="Card Title"></profile-card> -->
+    <div style="display: flex;">
+        <div style="flex: 1;">
+          <p> Hello World Example </p>
+          <simple-greeting name="Yasitha Gamage"></simple-greeting>
+      
+          <hr />
+      
+          <p>Full Component</p>
+          <full-component></full-component>
+      
+          <hr />
 
+          <p>Basic Properties</p>
+          <name-tag name="statically initilaized."></name-tag>
+
+          <hr />
+
+          <p>Css Testing</p>
+          <test-css></test-css>
+
+        </div>
+        <div style="flex: 1;">
+          <p>Test Profile Card With Bootstrap CSS</p>
+          <profile-card title="Card Title"></profile-card>
+        </div>
+    </div>
   </body>
 </html>
